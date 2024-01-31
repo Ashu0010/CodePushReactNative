@@ -10,7 +10,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-
+import codePush from 'react-native-code-push';
 const App = () => {
 
   return (
@@ -20,9 +20,9 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    backgroundColor:'red'
+    flex:1, 
+    backgroundColor:'pink'
   }
 });
 
-export default App;
+export default codePush(App);
